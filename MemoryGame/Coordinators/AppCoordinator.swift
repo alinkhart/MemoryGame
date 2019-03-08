@@ -6,8 +6,23 @@
 //  Copyright © 2019 Adam Linkhart, LLC. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class AppCoordinator {
+class AppCoordinator: Coordinator {
     
+    private let window: UIWindow
+    private let rootViewController: UINavigationController
+    private let lobbyCoordinator: LobbyCoordinator
+    
+    init(window: UIWindow) {
+        self.window = window
+        self.rootViewController = UINavigationController()
+        self.window.rootViewController = self.rootViewController
+        self.lobbyCoordinator = LobbyCoordinator(presenter: self.rootViewController)
+    }
+    
+    func start(animated: Bool) {
+        window.makeKeyAndVisible()
+        lobbyCoordinator.start(animated: animated)
+    }
 }

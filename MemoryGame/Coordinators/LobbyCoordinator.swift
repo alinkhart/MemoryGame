@@ -6,8 +6,20 @@
 //  Copyright © 2019 Adam Linkhart, LLC. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class LobbyCoordinator {
+class LobbyCoordinator: Coordinator {
     
+    private let presenter: UINavigationController
+    private let lobbyViewController: LobbyViewController
+    private var gameCoordinator: GameCoordinator?
+    
+    init(presenter: UINavigationController) {
+        self.presenter = presenter
+        self.lobbyViewController = LobbyViewController.makeFromStoryboard()
+    }
+    
+    func start(animated: Bool) {
+        presenter.viewControllers = [lobbyViewController]
+    }
 }
