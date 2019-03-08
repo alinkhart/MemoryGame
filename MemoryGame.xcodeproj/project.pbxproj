@@ -77,11 +77,10 @@
 		F28937CF2232E35D00C70CD4 /* MemoryGame */ = {
 			isa = PBXGroup;
 			children = (
+				F28937F02232E53E00C70CD4 /* Storyboards */,
 				F28937D02232E35D00C70CD4 /* AppDelegate.swift */,
 				F28937D22232E35D00C70CD4 /* ViewController.swift */,
-				F28937D42232E35D00C70CD4 /* Main.storyboard */,
 				F28937D72232E35F00C70CD4 /* Assets.xcassets */,
-				F28937D92232E35F00C70CD4 /* LaunchScreen.storyboard */,
 				F28937DC2232E35F00C70CD4 /* Info.plist */,
 			);
 			path = MemoryGame;
@@ -94,6 +93,15 @@
 				F28937E72232E35F00C70CD4 /* Info.plist */,
 			);
 			path = MemoryGameTests;
+			sourceTree = "<group>";
+		};
+		F28937F02232E53E00C70CD4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F28937D92232E35F00C70CD4 /* LaunchScreen.storyboard */,
+				F28937D42232E35D00C70CD4 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
