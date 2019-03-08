@@ -82,7 +82,7 @@ extension GameViewController: UICollectionViewDelegate {
         cell.cardImageView.image = card.frontImage
         card.isFlipped = true
         
-        game?.cardsShown.append(card)
+        game?.cardsGuessed.append(card)
     }
 }
 

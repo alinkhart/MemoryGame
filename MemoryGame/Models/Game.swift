@@ -19,15 +19,15 @@ class Game {
     var columns: Int
     var rows: Int
     var cards = [Card]()
-    var cardsShown = [Card]() {
+    var cardsGuessed = [Card]() {
         didSet {
-            if cardsShown.count == 2 && cardsShown[0].matches(card: cardsShown[1]){
-                cardsShown[0].isMatched = true
-                cardsShown[1].isMatched = true
-                cardsShown.removeAll()
-            } else if cardsShown.count == 2 {
+            if cardsGuessed.count == 2 && cardsGuessed[0].matches(card: cardsGuessed[1]){
+                cardsGuessed[0].isMatched = true
+                cardsGuessed[1].isMatched = true
+                cardsGuessed.removeAll()
+            } else if cardsGuessed.count == 2 {
                 delegate?.resetCardsUI()
-                self.cardsShown.removeAll()
+                self.cardsGuessed.removeAll()
                 
             }
         }

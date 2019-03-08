@@ -95,6 +95,7 @@
 		F28937CF2232E35D00C70CD4 /* MemoryGame */ = {
 			isa = PBXGroup;
 			children = (
+				F289380B22330B5C00C70CD4 /* Localization */,
 				F28937D72232E35F00C70CD4 /* Assets.xcassets */,
 				F28937F92232EC1800C70CD4 /* Coordinators */,
 				F28937F62232E89B00C70CD4 /* Helpers */,
@@ -177,6 +178,13 @@
 				F28938092232FAE500C70CD4 /* Game.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F289380B22330B5C00C70CD4 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
