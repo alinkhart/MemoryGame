@@ -18,6 +18,7 @@
 		F28937FB2232EC2E00C70CD4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28937FA2232EC2E00C70CD4 /* Coordinator.swift */; };
 		F28937FD2232EC6B00C70CD4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28937FC2232EC6B00C70CD4 /* AppCoordinator.swift */; };
 		F28937FF2232EC8C00C70CD4 /* LobbyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28937FE2232EC8C00C70CD4 /* LobbyCoordinator.swift */; };
+		F28938012232ECB800C70CD4 /* GameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28938002232ECB800C70CD4 /* GameCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		F28937FA2232EC2E00C70CD4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F28937FC2232EC6B00C70CD4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F28937FE2232EC8C00C70CD4 /* LobbyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyCoordinator.swift; sourceTree = "<group>"; };
+		F28938002232ECB800C70CD4 /* GameCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +138,9 @@
 		F28937F92232EC1800C70CD4 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				F28937FA2232EC2E00C70CD4 /* Coordinator.swift */,
 				F28937FC2232EC6B00C70CD4 /* AppCoordinator.swift */,
+				F28937FA2232EC2E00C70CD4 /* Coordinator.swift */,
+				F28938002232ECB800C70CD4 /* GameCoordinator.swift */,
 				F28937FE2232EC8C00C70CD4 /* LobbyCoordinator.swift */,
 			);
 			path = Coordinators;
@@ -250,6 +253,7 @@
 				F28937FB2232EC2E00C70CD4 /* Coordinator.swift in Sources */,
 				F28937F82232E8BE00C70CD4 /* StoryboardInitializable.swift in Sources */,
 				F28937F32232E83D00C70CD4 /* LobbyViewController.swift in Sources */,
+				F28938012232ECB800C70CD4 /* GameCoordinator.swift in Sources */,
 				F28937FF2232EC8C00C70CD4 /* LobbyCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
