@@ -17,6 +17,7 @@ class AppCoordinator: Coordinator {
     init(window: UIWindow) {
         self.window = window
         self.rootViewController = UINavigationController()
+        self.rootViewController.navigationBar.isHidden = true
         self.window.rootViewController = self.rootViewController
         self.lobbyCoordinator = LobbyCoordinator(presenter: self.rootViewController)
     }
