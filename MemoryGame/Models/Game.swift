@@ -13,6 +13,7 @@ class Game {
     var columns: Int
     var rows: Int
     var cards: [Card]?
+    var cardsShown = [Card]()
     
     private var cardNames = ["Bat", "Cat", "Cow", "Dragon", "GarbageMan", "GhostDog", "Hen", "Horse", "Pig", "Spider"]
     

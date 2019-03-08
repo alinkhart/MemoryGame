@@ -75,6 +75,13 @@ extension GameViewController: UICollectionViewDataSource {
 extension GameViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! CardCollectionViewCell
         
+        guard let card = game?.cards?[indexPath.row], !card.isFlipped else { return }
+        
+        cell.cardImageView.image = card.frontImage
+        card.isFlipped = true
+        
+        game?.cardsShown.append(card)
     }
 }
