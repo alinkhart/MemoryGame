@@ -16,6 +16,7 @@
 		F28937F52232E87300C70CD4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28937F42232E87300C70CD4 /* GameViewController.swift */; };
 		F28937F82232E8BE00C70CD4 /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28937F72232E8BE00C70CD4 /* StoryboardInitializable.swift */; };
 		F28937FB2232EC2E00C70CD4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28937FA2232EC2E00C70CD4 /* Coordinator.swift */; };
+		F28937FD2232EC6B00C70CD4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28937FC2232EC6B00C70CD4 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		F28937F42232E87300C70CD4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F28937F72232E8BE00C70CD4 /* StoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
 		F28937FA2232EC2E00C70CD4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F28937FC2232EC6B00C70CD4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				F28937FA2232EC2E00C70CD4 /* Coordinator.swift */,
+				F28937FC2232EC6B00C70CD4 /* AppCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F28937FD2232EC6B00C70CD4 /* AppCoordinator.swift in Sources */,
 				F28937D12232E35D00C70CD4 /* AppDelegate.swift in Sources */,
 				F28937F52232E87300C70CD4 /* GameViewController.swift in Sources */,
 				F28937FB2232EC2E00C70CD4 /* Coordinator.swift in Sources */,
