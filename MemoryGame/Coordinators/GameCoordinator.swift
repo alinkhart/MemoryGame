@@ -16,9 +16,17 @@ class GameCoordinator: Coordinator {
     init(presenter: UIViewController) {
         self.presenter = presenter
         self.gameViewController = GameViewController.makeFromStoryboard()
+        self.gameViewController.delegate = self
     }
     
     func start(animated: Bool) {
         presenter.show(gameViewController, sender: self)
+    }
+}
+
+extension GameCoordinator: GameViewControllerDelegate {
+    
+    func backButtonTapped() {
+        presenter.navigationController?.popViewController(animated: true)
     }
 }
