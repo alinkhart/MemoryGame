@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol GameViewControllerDelegate: class {
+    func backButtonTapped()
+}
+
 final class GameViewController: UIViewController, StoryboardInitializable {
 
     override func viewDidLoad() {
