@@ -14,6 +14,9 @@ protocol GameViewControllerDelegate: class {
 
 final class GameViewController: UIViewController, StoryboardInitializable {
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var collectionViewWidthConstraint: NSLayoutConstraint!
+    
     weak var delegate: GameViewControllerDelegate?
 
     override func viewDidLoad() {
