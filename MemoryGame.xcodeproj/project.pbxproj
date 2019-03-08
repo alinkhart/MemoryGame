@@ -13,6 +13,7 @@
 		F28937DB2232E35F00C70CD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F28937D92232E35F00C70CD4 /* LaunchScreen.storyboard */; };
 		F28937E62232E35F00C70CD4 /* MemoryGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28937E52232E35F00C70CD4 /* MemoryGameTests.swift */; };
 		F28937F32232E83D00C70CD4 /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28937F22232E83D00C70CD4 /* LobbyViewController.swift */; };
+		F28937F52232E87300C70CD4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28937F42232E87300C70CD4 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F28937E52232E35F00C70CD4 /* MemoryGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameTests.swift; sourceTree = "<group>"; };
 		F28937E72232E35F00C70CD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F28937F22232E83D00C70CD4 /* LobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
+		F28937F42232E87300C70CD4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		F28937F12232E81C00C70CD4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F28937F42232E87300C70CD4 /* GameViewController.swift */,
 				F28937F22232E83D00C70CD4 /* LobbyViewController.swift */,
 			);
 			path = ViewControllers;
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F28937D12232E35D00C70CD4 /* AppDelegate.swift in Sources */,
+				F28937F52232E87300C70CD4 /* GameViewController.swift in Sources */,
 				F28937F32232E83D00C70CD4 /* LobbyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
