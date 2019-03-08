@@ -19,6 +19,7 @@
 		F28937FD2232EC6B00C70CD4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28937FC2232EC6B00C70CD4 /* AppCoordinator.swift */; };
 		F28937FF2232EC8C00C70CD4 /* LobbyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28937FE2232EC8C00C70CD4 /* LobbyCoordinator.swift */; };
 		F28938012232ECB800C70CD4 /* GameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28938002232ECB800C70CD4 /* GameCoordinator.swift */; };
+		F28938042232F6B500C70CD4 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28938032232F6B500C70CD4 /* CardCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		F28937FC2232EC6B00C70CD4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		F28937FE2232EC8C00C70CD4 /* LobbyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyCoordinator.swift; sourceTree = "<group>"; };
 		F28938002232ECB800C70CD4 /* GameCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCoordinator.swift; sourceTree = "<group>"; };
+		F28938032232F6B500C70CD4 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		F28937CF2232E35D00C70CD4 /* MemoryGame */ = {
 			isa = PBXGroup;
 			children = (
+				F28938022232F69A00C70CD4 /* Views */,
 				F28937F92232EC1800C70CD4 /* Coordinators */,
 				F28937F62232E89B00C70CD4 /* Helpers */,
 				F28937F12232E81C00C70CD4 /* ViewControllers */,
@@ -144,6 +147,14 @@
 				F28937FE2232EC8C00C70CD4 /* LobbyCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		F28938022232F69A00C70CD4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F28938032232F6B500C70CD4 /* CardCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +265,7 @@
 				F28937F82232E8BE00C70CD4 /* StoryboardInitializable.swift in Sources */,
 				F28937F32232E83D00C70CD4 /* LobbyViewController.swift in Sources */,
 				F28938012232ECB800C70CD4 /* GameCoordinator.swift in Sources */,
+				F28938042232F6B500C70CD4 /* CardCollectionViewCell.swift in Sources */,
 				F28937FF2232EC8C00C70CD4 /* LobbyCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
