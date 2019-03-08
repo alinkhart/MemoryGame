@@ -13,11 +13,14 @@ protocol GameViewControllerDelegate: class {
 }
 
 final class GameViewController: UIViewController, StoryboardInitializable {
+    
+    weak var delegate: GameViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
+        delegate?.backButtonTapped()
     }
 }
