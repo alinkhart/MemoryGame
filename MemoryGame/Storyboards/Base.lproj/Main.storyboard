@@ -67,11 +67,19 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memory Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWP-pT-WIo">
+                                <rect key="frame" x="65" y="65" width="245.5" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="S9m-vP-Omf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="2pI-4E-3tS"/>
+                            <constraint firstItem="zWP-pT-WIo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l6e-zM-idr"/>
                             <constraint firstItem="S9m-vP-Omf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="rOW-wn-324"/>
+                            <constraint firstItem="zWP-pT-WIo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="rt0-VV-nek"/>
                             <constraint firstItem="S9m-vP-Omf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wlf-NB-2jw"/>
                             <constraint firstItem="S9m-vP-Omf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xJ8-nT-u3b"/>
                         </constraints>
