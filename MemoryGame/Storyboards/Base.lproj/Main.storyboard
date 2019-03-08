@@ -142,6 +142,10 @@
                                         </constraints>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="fDD-EL-TE1" id="Hbm-NC-0qe"/>
+                                    <outlet property="delegate" destination="fDD-EL-TE1" id="9Bl-pm-DOf"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
