@@ -6,8 +6,19 @@
 //  Copyright © 2019 Adam Linkhart, LLC. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-class GameCoordinator {
+class GameCoordinator: Coordinator {
     
+    private let presenter: UIViewController
+    private let gameViewController: GameViewController
+    
+    init(presenter: UIViewController) {
+        self.presenter = presenter
+        self.gameViewController = GameViewController.makeFromStoryboard()
+    }
+    
+    func start(animated: Bool) {
+        presenter.show(gameViewController, sender: self)
+    }
 }
