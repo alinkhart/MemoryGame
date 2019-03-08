@@ -13,4 +13,7 @@ final class GameViewController: UIViewController, StoryboardInitializable {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func backButtonTapped(_ sender: Any) {
+    }
 }

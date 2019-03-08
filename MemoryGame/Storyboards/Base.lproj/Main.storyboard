@@ -80,6 +80,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="41" y="27"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="2UE-RT-Cpv">
@@ -88,13 +89,33 @@
                     <view key="view" contentMode="scaleToFill" id="g5g-1h-Cij">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9d-eE-rep">
+                                <rect key="frame" x="16" y="36" width="67" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Imj-DV-3e7"/>
+                                    <constraint firstAttribute="width" constant="67" id="f3W-g9-SKN"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="BackButton"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="fDD-EL-TE1" eventType="touchUpInside" id="Yrp-Cu-yjS"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H9d-eE-rep" firstAttribute="leading" secondItem="znX-Fc-mK3" secondAttribute="leading" constant="16" id="EQU-zc-3fh"/>
+                            <constraint firstItem="H9d-eE-rep" firstAttribute="top" secondItem="znX-Fc-mK3" secondAttribute="top" constant="16" id="K8s-VP-Lm7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="znX-Fc-mK3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="veK-Cs-H8D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1017" y="27"/>
+            <point key="canvasLocation" x="945" y="27"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BackButton" width="95.5" height="82"/>
+    </resources>
 </document>
