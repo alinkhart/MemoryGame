@@ -122,7 +122,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCell" id="r2J-24-U8W">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCell" id="r2J-24-U8W" customClass="CardCollectionViewCell" customModule="MemoryGame" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="62" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -140,6 +140,9 @@
                                             <constraint firstAttribute="bottom" secondItem="Oon-eq-YFj" secondAttribute="bottom" id="mU2-8q-zXr"/>
                                             <constraint firstItem="Oon-eq-YFj" firstAttribute="top" secondItem="r2J-24-U8W" secondAttribute="top" id="zSL-DK-eml"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="cardImageView" destination="Oon-eq-YFj" id="qnT-AD-SJm"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
