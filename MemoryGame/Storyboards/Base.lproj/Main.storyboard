@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lobby View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LobbyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LobbyViewController" customModule="MemoryGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="S9m-vP-Omf">
+                                <rect key="frame" x="94" y="167" width="187.5" height="333.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nn-y3-Pqx">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="80"/>
+                                        <color key="backgroundColor" red="0.2274509804" green="0.5568627451" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                        <state key="normal" title="3x4">
+                                            <color key="titleColor" red="0.43529411759999997" green="0.90980392160000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="threeByFourButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NXc-Tf-PMX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4S-EN-fu4">
+                                        <rect key="frame" x="0.0" y="84" width="187.5" height="80.5"/>
+                                        <color key="backgroundColor" red="0.2274509804" green="0.5568627451" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                        <state key="normal" title="5x2">
+                                            <color key="titleColor" red="0.43529411759999997" green="0.90980392160000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fiveByTwoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1rc-pM-3zv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2g-xd-6Gn">
+                                        <rect key="frame" x="0.0" y="168.5" width="187.5" height="80.5"/>
+                                        <color key="backgroundColor" red="0.2274509804" green="0.5568627451" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                        <state key="normal" title="4x4">
+                                            <color key="titleColor" red="0.43529411759999997" green="0.90980392160000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fourByFourButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FMN-Z2-gAt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iy-w4-6Zu">
+                                        <rect key="frame" x="0.0" y="253" width="187.5" height="80.5"/>
+                                        <color key="backgroundColor" red="0.2274509804" green="0.5568627451" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                                        <state key="normal" title="4x5">
+                                            <color key="titleColor" red="0.43529411759999997" green="0.90980392160000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fourByFiveButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G2b-uU-3Nw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memory Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWP-pT-WIo">
+                                <rect key="frame" x="65" y="65" width="245.5" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="S9m-vP-Omf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="2pI-4E-3tS"/>
+                            <constraint firstItem="zWP-pT-WIo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l6e-zM-idr"/>
+                            <constraint firstItem="S9m-vP-Omf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="rOW-wn-324"/>
+                            <constraint firstItem="zWP-pT-WIo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="rt0-VV-nek"/>
+                            <constraint firstItem="S9m-vP-Omf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wlf-NB-2jw"/>
+                            <constraint firstItem="S9m-vP-Omf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xJ8-nT-u3b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="27"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="2UE-RT-Cpv">
+            <objects>
+                <viewController storyboardIdentifier="GameViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fDD-EL-TE1" customClass="GameViewController" customModule="MemoryGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g5g-1h-Cij">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9d-eE-rep">
+                                <rect key="frame" x="16" y="36" width="67" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Imj-DV-3e7"/>
+                                    <constraint firstAttribute="width" constant="67" id="f3W-g9-SKN"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="BackButton"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="fDD-EL-TE1" eventType="touchUpInside" id="Yrp-Cu-yjS"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="n6u-Z1-xv1">
+                                <rect key="frame" x="12.5" y="115" width="350" height="552"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="t1B-Hf-8mX"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2Oa-9p-uBi">
+                                    <size key="itemSize" width="62" height="90"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCell" id="r2J-24-U8W" customClass="CardCollectionViewCell" customModule="MemoryGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="62" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="62" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardBack" translatesAutoresizingMaskIntoConstraints="NO" id="Oon-eq-YFj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="62" height="90"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Oon-eq-YFj" secondAttribute="trailing" id="1NU-Oe-PCH"/>
+                                            <constraint firstItem="Oon-eq-YFj" firstAttribute="leading" secondItem="r2J-24-U8W" secondAttribute="leading" id="Xes-TX-H4G"/>
+                                            <constraint firstAttribute="bottom" secondItem="Oon-eq-YFj" secondAttribute="bottom" id="mU2-8q-zXr"/>
+                                            <constraint firstItem="Oon-eq-YFj" firstAttribute="top" secondItem="r2J-24-U8W" secondAttribute="top" id="zSL-DK-eml"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="cardImageView" destination="Oon-eq-YFj" id="qnT-AD-SJm"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="fDD-EL-TE1" id="Hbm-NC-0qe"/>
+                                    <outlet property="delegate" destination="fDD-EL-TE1" id="9Bl-pm-DOf"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H9d-eE-rep" firstAttribute="leading" secondItem="znX-Fc-mK3" secondAttribute="leading" constant="16" id="EQU-zc-3fh"/>
+                            <constraint firstItem="H9d-eE-rep" firstAttribute="top" secondItem="znX-Fc-mK3" secondAttribute="top" constant="16" id="K8s-VP-Lm7"/>
+                            <constraint firstItem="n6u-Z1-xv1" firstAttribute="centerX" secondItem="g5g-1h-Cij" secondAttribute="centerX" id="Lsw-vj-8MD"/>
+                            <constraint firstItem="n6u-Z1-xv1" firstAttribute="top" secondItem="H9d-eE-rep" secondAttribute="bottom" constant="24" id="QCx-4h-7sU"/>
+                            <constraint firstItem="znX-Fc-mK3" firstAttribute="bottom" secondItem="n6u-Z1-xv1" secondAttribute="bottom" id="jON-nF-h2I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="znX-Fc-mK3"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="n6u-Z1-xv1" id="9Ry-pD-V1R"/>
+                        <outlet property="collectionViewWidthConstraint" destination="t1B-Hf-8mX" id="1gS-Si-C6V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="veK-Cs-H8D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.79999999999995" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackButton" width="95.5" height="82"/>
+        <image name="CardBack" width="147" height="211"/>
+    </resources>
+</document>
