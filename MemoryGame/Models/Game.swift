@@ -19,6 +19,7 @@ class Game {
     init(columns: Int, rows: Int) {
         self.columns = columns
         self.rows = rows
+        self.cards = createCards(numberOfCards: columns * rows) ?? [Card]()
     }
     
     private func createCards(numberOfCards: Int) -> [Card]? {
