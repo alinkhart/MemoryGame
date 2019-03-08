@@ -12,10 +12,13 @@ class GameCoordinator: Coordinator {
     
     private let presenter: UIViewController
     private let gameViewController: GameViewController
+    private let game: Game
     
-    init(presenter: UIViewController) {
+    init(presenter: UIViewController, game: Game) {
         self.presenter = presenter
+        self.game = game
         self.gameViewController = GameViewController.makeFromStoryboard()
+        self.gameViewController.game = game
         self.gameViewController.delegate = self
     }
     

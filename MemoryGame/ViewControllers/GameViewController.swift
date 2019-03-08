@@ -18,6 +18,8 @@ final class GameViewController: UIViewController, StoryboardInitializable {
     @IBOutlet weak var collectionViewWidthConstraint: NSLayoutConstraint!
     
     weak var delegate: GameViewControllerDelegate?
+    
+    var game: Game?
 
     override func viewDidLoad() {
         super.viewDidLoad()

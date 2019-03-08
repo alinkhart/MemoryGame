@@ -28,7 +28,9 @@ class LobbyCoordinator: Coordinator {
 extension LobbyCoordinator: LobbyViewControllerDelegate {
     
     func startGameButtonTapped(columns: Int, rows: Int) {
-        gameCoordinator = GameCoordinator(presenter: lobbyViewController)
+        let game = Game(columns: columns, rows: rows)
+        
+        gameCoordinator = GameCoordinator(presenter: lobbyViewController, game: game)
         gameCoordinator?.start(animated: true)
     }
 }
