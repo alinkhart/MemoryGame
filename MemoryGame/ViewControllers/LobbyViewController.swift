@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol LobbyViewControllerDelegate: class {
+    func startGameButtonTapped(columns: Int, rows: Int)
+}
+
 final class LobbyViewController: UIViewController, StoryboardInitializable {
 
     override func viewDidLoad() {
