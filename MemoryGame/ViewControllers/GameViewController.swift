@@ -89,6 +89,8 @@ extension GameViewController: UICollectionViewDelegate {
 extension GameViewController: GameDelegate {
     
     func resetCardsUI() {
+        collectionView.isUserInteractionEnabled = false
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
             
             guard let cards = self.game?.cards else { return }
@@ -100,6 +102,8 @@ extension GameViewController: GameDelegate {
                     cell.cardImageView.image = UIImage(named: "CardBack")!
                 }
             }
+            
+            self.collectionView.isUserInteractionEnabled = true
         }
     }
 }
