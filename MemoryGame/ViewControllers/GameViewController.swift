@@ -44,3 +44,10 @@ extension GameViewController: UICollectionViewDataSource {
         return cell
     }
 }
+
+extension GameViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+}
