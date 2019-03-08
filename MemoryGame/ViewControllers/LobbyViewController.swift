@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LobbyViewController: UIViewController {
+final class LobbyViewController: UIViewController, StoryboardInitializable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
