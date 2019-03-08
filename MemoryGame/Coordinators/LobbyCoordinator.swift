@@ -17,9 +17,18 @@ class LobbyCoordinator: Coordinator {
     init(presenter: UINavigationController) {
         self.presenter = presenter
         self.lobbyViewController = LobbyViewController.makeFromStoryboard()
+        self.lobbyViewController.delegate = self
     }
     
     func start(animated: Bool) {
         presenter.viewControllers = [lobbyViewController]
+    }
+}
+
+extension LobbyCoordinator: LobbyViewControllerDelegate {
+    
+    func startGameButtonTapped(columns: Int, rows: Int) {
+        gameCoordinator = GameCoordinator(presenter: lobbyViewController)
+        gameCoordinator?.start(animated: true)
     }
 }
