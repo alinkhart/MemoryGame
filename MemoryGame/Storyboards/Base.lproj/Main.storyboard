@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Lobby View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MemoryGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LobbyViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LobbyViewController" customModule="MemoryGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,6 +28,9 @@
                                         <state key="normal" title="3x4">
                                             <color key="titleColor" red="0.43529411759999997" green="0.90980392160000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="threeByFourButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NXc-Tf-PMX"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4S-EN-fu4">
                                         <rect key="frame" x="0.0" y="84" width="187.5" height="80.5"/>
@@ -36,6 +39,9 @@
                                         <state key="normal" title="5x2">
                                             <color key="titleColor" red="0.43529411759999997" green="0.90980392160000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="fiveByTwoButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1rc-pM-3zv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2g-xd-6Gn">
                                         <rect key="frame" x="0.0" y="168.5" width="187.5" height="80.5"/>
@@ -44,6 +50,9 @@
                                         <state key="normal" title="4x4">
                                             <color key="titleColor" red="0.43529411759999997" green="0.90980392160000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="fourByFourButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FMN-Z2-gAt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9iy-w4-6Zu">
                                         <rect key="frame" x="0.0" y="253" width="187.5" height="80.5"/>
@@ -52,6 +61,9 @@
                                         <state key="normal" title="4x5">
                                             <color key="titleColor" red="0.43529411759999997" green="0.90980392160000001" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="fourByFiveButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G2b-uU-3Nw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

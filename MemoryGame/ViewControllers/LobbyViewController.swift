@@ -13,4 +13,17 @@ class LobbyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    @IBAction func threeByFourButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func fiveByTwoButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func fourByFourButtonTapped(_ sender: Any) {
+    }
+    
+    @IBAction func fourByFiveButtonTapped(_ sender: Any) {
+    }
+    
 }
