@@ -43,6 +43,10 @@ extension GameViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath) as! CardCollectionViewCell
         
+        guard let card = game?.cards?[indexPath.row] else { return cell }
+        
+        cell.cardImageView.image = card.backImage
+        
         return cell
     }
 }
