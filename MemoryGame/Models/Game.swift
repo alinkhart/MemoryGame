@@ -48,10 +48,10 @@ class Game {
         removeRandomCards(numberToRemove: distinctCardNumber)
         
         for cardName in cardNames {
-            guard let cardFrontImate = UIImage(named: "\(cardName)CardFront") else { continue }
+            guard let cardFrontImage = UIImage(named: "\(cardName)CardFront") else { continue }
             
-            let card1 = Card(name: cardName, frontImage: cardFrontImate)
-            let card2 = Card(name: cardName, frontImage: cardFrontImate)
+            let card1 = Card(name: cardName, frontImage: cardFrontImage)
+            let card2 = Card(name: cardName, frontImage: cardFrontImage)
             tempCards.append(card1)
             tempCards.append(card2)
         }
