@@ -14,10 +14,14 @@ protocol LobbyViewControllerDelegate: class {
 
 final class LobbyViewController: UIViewController, StoryboardInitializable {
     
+    @IBOutlet weak var titleLabel: UILabel!
+    
     weak var delegate: LobbyViewControllerDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleLabel.text = NSLocalizedString("LobbyTitle", comment: "Title for the Lobby view.")
     }
     
     @IBAction func threeByFourButtonTapped(_ sender: Any) {
