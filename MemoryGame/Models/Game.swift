@@ -19,7 +19,19 @@ class Game {
     var columns: Int
     var rows: Int
     var cards = [Card]()
-    var cardsShown = [Card]()
+    var cardsShown = [Card]() {
+        didSet {
+            if cardsShown.count == 2 && cardsShown[0].matches(card: cardsShown[1]){
+                cardsShown[0].isMatched = true
+                cardsShown[1].isMatched = true
+                cardsShown.removeAll()
+            } else if cardsShown.count == 2 {
+                delegate?.resetCardsUI()
+                self.cardsShown.removeAll()
+                
+            }
+        }
+    }
     
     private var cardNames = ["Bat", "Cat", "Cow", "Dragon", "GarbageMan", "GhostDog", "Hen", "Horse", "Pig", "Spider"]
     

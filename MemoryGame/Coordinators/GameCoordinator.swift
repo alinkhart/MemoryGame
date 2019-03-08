@@ -19,6 +19,7 @@ class GameCoordinator: Coordinator {
         self.game = game
         self.gameViewController = GameViewController.makeFromStoryboard()
         self.gameViewController.game = game
+        self.game.delegate = gameViewController
         self.gameViewController.delegate = self
     }
     
