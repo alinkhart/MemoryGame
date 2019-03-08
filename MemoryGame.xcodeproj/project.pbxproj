@@ -22,6 +22,7 @@
 		F28938042232F6B500C70CD4 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28938032232F6B500C70CD4 /* CardCollectionViewCell.swift */; };
 		F28938082232FA7F00C70CD4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28938072232FA7F00C70CD4 /* Card.swift */; };
 		F289380A2232FAE500C70CD4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28938092232FAE500C70CD4 /* Game.swift */; };
+		F289380E22330F1C00C70CD4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F289380C22330F1C00C70CD4 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		F28938032232F6B500C70CD4 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		F28938072232FA7F00C70CD4 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		F28938092232FAE500C70CD4 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		F289380D22330F1C00C70CD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = MemoryGame/Storyboards/Base.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +97,10 @@
 		F28937CF2232E35D00C70CD4 /* MemoryGame */ = {
 			isa = PBXGroup;
 			children = (
-				F289380B22330B5C00C70CD4 /* Localization */,
 				F28937D72232E35F00C70CD4 /* Assets.xcassets */,
 				F28937F92232EC1800C70CD4 /* Coordinators */,
 				F28937F62232E89B00C70CD4 /* Helpers */,
+				F289380B22330B5C00C70CD4 /* Localization */,
 				F28938062232FA6900C70CD4 /* Models */,
 				F28938052232F9DA00C70CD4 /* StartUp */,
 				F28937F02232E53E00C70CD4 /* Storyboards */,
@@ -183,6 +185,7 @@
 		F289380B22330B5C00C70CD4 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
+				F289380C22330F1C00C70CD4 /* Localizable.strings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F28937DB2232E35F00C70CD4 /* LaunchScreen.storyboard in Resources */,
+				F289380E22330F1C00C70CD4 /* Localizable.strings in Resources */,
 				F28937D82232E35F00C70CD4 /* Assets.xcassets in Resources */,
 				F28937D62232E35D00C70CD4 /* Main.storyboard in Resources */,
 			);
@@ -335,6 +339,14 @@
 				F28937DA2232E35F00C70CD4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F289380C22330F1C00C70CD4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F289380D22330F1C00C70CD4 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
