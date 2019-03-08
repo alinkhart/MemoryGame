@@ -20,13 +20,34 @@ final class GameViewController: UIViewController, StoryboardInitializable {
     weak var delegate: GameViewControllerDelegate?
     
     var game: Game?
+    
+    let fiveColumnWidth: CGFloat = 350
+    let fourColumnWidth: CGFloat = 278
+    let threeColumnWidth: CGFloat = 206
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setCollectionWidth()
     }
     
     @IBAction func backButtonTapped(_ sender: Any) {
         delegate?.backButtonTapped()
+    }
+    
+    private func setCollectionWidth() {
+        switch game?.columns {
+        case 5:
+            collectionViewWidthConstraint.constant = fiveColumnWidth
+            break
+        case 4:
+            collectionViewWidthConstraint.constant = fourColumnWidth
+            break;
+        case 3:
+            collectionViewWidthConstraint.constant = threeColumnWidth
+        default:
+            break;
+        }
     }
 }
 
