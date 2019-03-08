@@ -21,6 +21,7 @@
 		F28938012232ECB800C70CD4 /* GameCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28938002232ECB800C70CD4 /* GameCoordinator.swift */; };
 		F28938042232F6B500C70CD4 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28938032232F6B500C70CD4 /* CardCollectionViewCell.swift */; };
 		F28938082232FA7F00C70CD4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28938072232FA7F00C70CD4 /* Card.swift */; };
+		F289380A2232FAE500C70CD4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28938092232FAE500C70CD4 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		F28938002232ECB800C70CD4 /* GameCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCoordinator.swift; sourceTree = "<group>"; };
 		F28938032232F6B500C70CD4 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
 		F28938072232FA7F00C70CD4 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		F28938092232FAE500C70CD4 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				F28938072232FA7F00C70CD4 /* Card.swift */,
+				F28938092232FAE500C70CD4 /* Game.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				F28937FB2232EC2E00C70CD4 /* Coordinator.swift in Sources */,
 				F28937F82232E8BE00C70CD4 /* StoryboardInitializable.swift in Sources */,
 				F28937F32232E83D00C70CD4 /* LobbyViewController.swift in Sources */,
+				F289380A2232FAE500C70CD4 /* Game.swift in Sources */,
 				F28938012232ECB800C70CD4 /* GameCoordinator.swift in Sources */,
 				F28938082232FA7F00C70CD4 /* Card.swift in Sources */,
 				F28938042232F6B500C70CD4 /* CardCollectionViewCell.swift in Sources */,
