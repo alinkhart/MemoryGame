@@ -91,14 +91,13 @@
 		F28937CF2232E35D00C70CD4 /* MemoryGame */ = {
 			isa = PBXGroup;
 			children = (
-				F28938022232F69A00C70CD4 /* Views */,
+				F28937D72232E35F00C70CD4 /* Assets.xcassets */,
 				F28937F92232EC1800C70CD4 /* Coordinators */,
 				F28937F62232E89B00C70CD4 /* Helpers */,
-				F28937F12232E81C00C70CD4 /* ViewControllers */,
+				F28938052232F9DA00C70CD4 /* StartUp */,
 				F28937F02232E53E00C70CD4 /* Storyboards */,
-				F28937D02232E35D00C70CD4 /* AppDelegate.swift */,
-				F28937D72232E35F00C70CD4 /* Assets.xcassets */,
-				F28937DC2232E35F00C70CD4 /* Info.plist */,
+				F28937F12232E81C00C70CD4 /* ViewControllers */,
+				F28938022232F69A00C70CD4 /* Views */,
 			);
 			path = MemoryGame;
 			sourceTree = "<group>";
@@ -155,6 +154,15 @@
 				F28938032232F6B500C70CD4 /* CardCollectionViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F28938052232F9DA00C70CD4 /* StartUp */ = {
+			isa = PBXGroup;
+			children = (
+				F28937D02232E35D00C70CD4 /* AppDelegate.swift */,
+				F28937DC2232E35F00C70CD4 /* Info.plist */,
+			);
+			path = StartUp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -430,7 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Z7D9THFQV;
-				INFOPLIST_FILE = MemoryGame/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MemoryGame/StartUp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,7 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2Z7D9THFQV;
-				INFOPLIST_FILE = MemoryGame/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MemoryGame/StartUp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
