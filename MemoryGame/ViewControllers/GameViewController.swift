@@ -58,13 +58,13 @@ extension GameViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return game?.cards?.count ?? 0
+        return game?.cards.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath) as! CardCollectionViewCell
         
-        guard let card = game?.cards?[indexPath.row] else { return cell }
+        guard let card = game?.cards[indexPath.row] else { return cell }
         
         cell.cardImageView.image = card.backImage
         
@@ -77,11 +77,29 @@ extension GameViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! CardCollectionViewCell
         
-        guard let card = game?.cards?[indexPath.row], !card.isFlipped else { return }
+        guard let card = game?.cards[indexPath.row], !card.isFlipped else { return }
         
         cell.cardImageView.image = card.frontImage
         card.isFlipped = true
         
         game?.cardsShown.append(card)
+    }
+}
+
+extension GameViewController: GameDelegate {
+    
+    func resetCardsUI() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            
+            guard let cards = self.game?.cards else { return }
+            
+            for (index, card) in cards.enumerated() {
+                if card.isFlipped && !card.isMatched {
+                    card.isFlipped = false
+                    let cell = self.collectionView.cellForItem(at: IndexPath(row: index, section: 0)) as! CardCollectionViewCell
+                    cell.cardImageView.image = UIImage(named: "CardBack")!
+                }
+            }
+        }
     }
 }

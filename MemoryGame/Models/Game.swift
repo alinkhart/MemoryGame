@@ -8,11 +8,17 @@
 
 import UIKit
 
+protocol GameDelegate: class {
+    func resetCardsUI()
+}
+
 class Game {
+    
+    weak var delegate: GameDelegate?
     
     var columns: Int
     var rows: Int
-    var cards: [Card]?
+    var cards = [Card]()
     var cardsShown = [Card]()
     
     private var cardNames = ["Bat", "Cat", "Cow", "Dragon", "GarbageMan", "GhostDog", "Hen", "Horse", "Pig", "Spider"]
@@ -20,10 +26,10 @@ class Game {
     init(columns: Int, rows: Int) {
         self.columns = columns
         self.rows = rows
-        self.cards = createCards(numberOfCards: columns * rows) ?? [Card]()
+        self.cards = createCards(numberOfCards: columns * rows)
     }
     
-    private func createCards(numberOfCards: Int) -> [Card]? {
+    private func createCards(numberOfCards: Int) -> [Card] {
         let distinctCardNumber = numberOfCards / 2
         var tempCards = [Card]()
         
