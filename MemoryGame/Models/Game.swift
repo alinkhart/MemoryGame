@@ -27,7 +27,7 @@ class Game {
                 cardsGuessed.removeAll()
             } else if cardsGuessed.count == 2 {
                 delegate?.resetCardsUI()
-                self.cardsGuessed.removeAll()
+                cardsGuessed.removeAll()
                 
             }
         }
